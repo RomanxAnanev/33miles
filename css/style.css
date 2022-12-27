@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    width: 100%; 
+}
+button img{
+    margin-left: 15px;
+}
+.header{
+    background-image: url(/img/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+}
+.header__logo{
+    padding-top: 50px;
+    margin-bottom: 90px;
+}
+.text{
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    color: #292929;
+    max-width: 630px;
+    margin-bottom: 90px;
+}
+.textApp{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.text__red{
+    color: #A85861;
+}
+.text__blue{
+    color: #A6C7FF;
+}
+.appoinment__button{
+    display: flex;
+    margin-top: 31px;
+    padding-bottom: 400px;
+}
+.appoinment__button button{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #586D91;
+    width: 199px;
+    height: 56px;
+    text-align: center;
+    border-radius: 36px;
+    justify-content: center;
+    color: #FFFFFF;
+    border: 0px;
+}
+
+.appoinment__button button:last-child{
+    width: 160px;
+    margin-left: 36px;
+}
+@media screen and (max-width: 774px){
+    .container{
+        width: 610px;
+    }
+    .header__logo{
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .textApp{
+        text-align: center;
+    }
+    .appoinment__button{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 320px){
+    .container{
+        width: 320px;
+    }
+    .header__logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 212px;
+        height: 59px;
+    }
+    .text{
+        font-size: 24px;
+        max-width: 317px;
+    }
+    .textApp{
+        font-size: 18px;
+    }
+    .appoinment__button button{
+        width: 86px;
+        height: 28px;
+        font-size: 9px;
+    }
+    .appoinment__button img{
+        width: 3px;
+        height: 5px;
+    }
+    .appoinment__button button:last-child{
+        width: 86px;
+        height: 28px;
+        font-size: 9px;
+    }
+    .header__logo img{
+        width: 212px;
+        height: 59px;
+    }
+    .button__appointment img{
+        margin-left: 1px;
+    }
+}
+
+/* main */
+.main{
+    background-color: #292929;
+}
+.main__nav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.nav__search{
+    margin-right: 30px;
+}
+.nav__list{
+    display: flex;
+}
+.nav__list :last-child{
+    margin-right: 0px;
+}
+
+.list__elem{
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 177px;
+    height: 53px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.list__elem a{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: #292929;
+    margin-right: 12px;
+}
+input{
+    font-family: Montserrat;
+    font-size: 24px;
+    width: 593px;
+    height: 53px;
+    border-radius: 10px;
+    background-image: url(/img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 555px 14px;
+
+}
+input[placeholder]{
+    padding-left: 15px;
+}
+.main__cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__cards :nth-child(4){
+    margin-right: 20px;
+}
+.main__cards :last-child{
+    margin-right: 0px;
+}
+.card{
+    width: 295px;
+    height: 385px;
+    background: linear-gradient(146.8deg, #2D2D2D 0%, #474747 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    font-family: Montserrat;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card__img{
+    width: 241px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+.card button{
+    background-color: #f0f8ff00;
+    border-color: #FFFFFF;
+    border-radius: 26px;
+    align-items: center;
+    color: white;
+    font-family: Roboto;
+    width: 147px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card-6 h1{
+    width: 181px;
+    height: 62px;
+    text-align: center;
+}
+.card-6 p{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    color: #BFBFBF;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 105px;  
+}
+.card-6 button{
+    width: 251px;
+}
+.cardW{
+    width: 610px;
+    height: 385px;
+    background: linear-gradient(146.8deg, #2D2D2D 0%, #474747 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardW__content{
+    font-family: Montserrat;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    width: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardW__content h1{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.cardW__description{
+    font-family: Montserrat;
+    color: #BFBFBF;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardW__description p{
+    margin-bottom: 70px;
+}
+.cardW button{
+    background-color: #f0f8ff00;
+    border-color: #FFFFFF;
+    border-radius: 26px;
+    align-items: center;
+    color: white;
+    font-family: Roboto;
+    width: 160px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: -20px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 774px){
+    .main__nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav__search{
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+    .nav__list{
+        justify-content: space-between;
+        width: 608px;
+    }
+    .list__elem{
+        margin-right: 0px;
+    }
+    .main__cards :nth-child(4){
+        margin-right: 0px;
+    }
+    .main__cards :nth-child(2){
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 320px){
+    input{
+        width: 278px;
+        height: 25px;
+        border-radius: 5px;
+        background-position: 250px 5px;
+        background-size: 10%;
+    }
+    .nav__list{
+        width: 295px;
+    }
+    .list__elem{
+        width: 86px;
+        height: 26px;
+        border-radius: 5px;
+    }
+    .list__elem a{
+        font-size: 12px;
+    }
+    .list__elem img{
+        width: 14px;
+        height: 18px;
+    }
+    input[placeholder]{
+        font-size: 12px;
+    }
+    .cardW__description p{
+        display: none;
+    }
+    .cardW{
+        flex-direction: column;
+        width: 290px;
+    }
+    .cardW button{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .cardW__content h1{
+        margin-bottom: 0px;
+    }
+    .main__cards{  
+        align-items: center;
+    }
+    .card{
+        margin-right: 0px;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/* footer */
+footer{
+    background-color: #FFFFFF;
+    height: 126px;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: #292929;
+    font-size: 16px;
+    font-family: Roboto;
+
+}
+.footer__container a{
+    text-decoration: none;
+    color: #292929;
+}
+@media screen and (max-width: 320px){
+    .footer__container{
+        flex-direction: column;
+    }
+    .f{
+        margin-bottom: 20px;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+}
