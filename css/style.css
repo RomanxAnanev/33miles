@@ -364,7 +364,7 @@ input[placeholder]{
         margin-bottom: 0px;
     }
     .main__cards{  
-        align-items: center;
+        justify-content: center;
     }
     .card{
         margin-right: 0px;
